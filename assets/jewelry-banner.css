@@ -1,0 +1,35 @@
+.banner-wrapper {
+  background-color: #241323;
+  overflow: hidden; 
+  white-space: nowrap;
+}
+
+.banner-inner-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.banner-track {
+  display: inline-flex;
+  animation: scroll-left 25s linear infinite; 
+}
+
+.banner-text {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding: 0 20px;
+  color: #fff;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

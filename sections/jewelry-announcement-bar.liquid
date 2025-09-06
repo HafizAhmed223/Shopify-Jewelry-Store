@@ -1,0 +1,68 @@
+{{ 'jewelry-announcement-bar.css' | asset_url | stylesheet_tag }}
+<!-- announcement bar -->
+<div class="ab-wrapper">
+  <div class="container">
+    <div class="ab-inner-wrapper">
+      <div class="swiper">
+        <div class="swiper-button-container">
+          <div class="swiper-button-prev">
+            <button type="text" class="swiper-button">
+              <img
+                class="swiper-button-img"
+                src="{{ 'left-arrow.svg' | asset_url }}"
+                alt="left-arrow"
+                width="24"
+                height="24"
+              >
+            </button>
+          </div>
+          <div class="swiper-button-next">
+            <button type="text" class="swiper-button">
+              <img
+                class="swiper-button-img"
+                src="{{ 'right-arrow.svg' | asset_url }}"
+                alt="right-arrow"
+                width="24"
+                height="24"
+              >
+            </button>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class="swiper-slide-text">WE DON'T SELL JEWELRY - WE SELL ENERGY</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper-slide-text">WE DON'T SELL JEWELRY - WE SELL TIMELESSNESS</p>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper-slide-text">WE DON'T SELL JEWELRY - WE SELL EMOTION</p>
+          </div>
+        </div>
+      </div>
+      <ul class="ab-list">
+        <li class="ab-list-item">Loyality Club</li>
+        <li class="ab-list-item">About</li>
+        <li class="ab-list-item">Discover</li>
+        <li class="ab-list-item">FAQ</li>
+        <li class="ab-list-item">Contact Us</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="{{ 'jewelry-announcement-bar.js' | asset_url }}" defer></script>
+{% schema %}
+{
+  "name": "Jewelry Announcement Bar",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Jewelry Announcement Bar",
+      "category": "Jewelry-Announcement-Bar"
+    }
+  ]
+}
+{% endschema %}

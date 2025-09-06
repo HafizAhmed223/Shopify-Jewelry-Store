@@ -1,0 +1,235 @@
+.hero-wrapper {
+  background: url("../assets/hero-bg.png");
+  object-fit: cover;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  padding: 30px 0;
+}
+
+.top-hero-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-title-wrapper {
+  width: 100%;
+}
+
+  .hero-title-wrapper .title-line-1,
+  .hero-title-wrapper .title-line-2 {
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    align-self: start;
+    color: #ecc525;
+  }
+
+.hero-top-img-wrapper {
+  display: none;
+}
+
+.bottom-hero-wrapper {
+  display: flex;
+  flex-direction: column-reverse; 
+  width: 100%;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-bottom-desc-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  gap: 40px;
+  color: #E1E1E1;
+}
+
+.hero-desc-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  color: #E1E1E1;
+  .desc-line-2{
+    white-space: nowrap;
+  }
+}
+
+.hero-btn-wrapper {
+  width: 100%;
+}
+
+.btn-class {
+  width: 100%; 
+  max-width: 340px; 
+  height: 60px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  background: #b07a78;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-class:hover {
+  background-color: #ecc525;
+  color: #fff;
+}
+
+.hero-bottom-imgs-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.left-img-wrapper,
+.right-img-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 100%;
+
+}
+
+.bottom-left-img,
+.bottom-right-img {
+  width: 100%;
+  height: 100%;
+  object-fit: none; 
+}
+
+
+.hero-bottom-imgs-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px; 
+}
+
+
+@media (min-width: 900px) {
+  .hero-wrapper {
+      background: url("../assets/hero-bg.png");
+      background-size: cover;
+      height: calc(100vh - 32.5px);
+  }
+  
+  .hero-section {
+      flex-direction: column;
+      justify-content: center;
+      gap: 0;
+      padding: 0;
+  }
+
+  .top-hero-wrapper {
+      justify-content: center;
+      padding-top: 50px;
+  }
+
+  .hero-title-wrapper {
+      width: 55%;
+      align-items: flex-start;
+      text-align: left;
+      font-size: 37px;
+      line-height: 220%;
+  }
+
+ .hero-title-wrapper .title-line-1,
+  .hero-title-wrapper .title-line-2 {
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    align-self: start;
+    color: #ecc525;
+  }
+
+  .hero-top-img-wrapper {
+      display: flex; 
+      width: 45%;
+      justify-content: flex-end;
+      align-items: center;
+  }
+
+  .bottom-hero-wrapper {
+      flex-direction: row; 
+      justify-content: space-between;
+      align-items: center;
+      gap: 0;
+  }
+
+  .hero-bottom-desc-btn-wrapper {
+      align-items: flex-end; 
+      text-align: right;
+      gap: 50px;
+  }
+  
+  .hero-desc-wrapper {
+      font-size: 18px;
+      line-height: 20.8px;
+  }
+
+  .hero-btn-wrapper {
+      width: auto;
+  }
+
+  .btn-class {
+      width: 340px; 
+      height: 65px;
+  }
+
+  .hero-bottom-imgs-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .left-img-wrapper,
+  .right-img-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 100%;
+
+  }
+
+  .bottom-left-img,
+  .bottom-right-img {
+    width: 100%;
+    height: 100%;
+    object-fit: none; 
+  }
+}

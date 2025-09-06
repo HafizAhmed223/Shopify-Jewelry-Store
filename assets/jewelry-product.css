@@ -1,0 +1,163 @@
+.product-wrapper {
+  background: #210e20;
+  padding: 40px 0;
+}
+
+.product-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product-section .top-section-wrapper {
+  display: flex;
+  flex-direction: column; /* mobile first */
+  gap: 20px;
+}
+
+.product-section .left-section-title {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-family: El Messiri;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: start;
+}
+
+.product-section .right-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.product-section .right-section-description {
+  font-family: "El Messiri";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product-section .right-section-products {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+}
+
+.list-items-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.list-img-wrapper img {
+  width: 32px;
+  height: 32px;
+}
+
+.list-text {
+  font-size: 16px;
+  color: #fff;
+}
+
+.list-text strong {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Product grid */
+.product-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  overflow-x: hidden;
+}
+
+.see-all-products {
+  display: none;
+  width: 100%;
+  justify-content: flex-end;
+  color: #fff;
+  cursor: pointer;
+}
+
+.products-items-wrapper {
+  display: flex;
+  min-width: 400px;
+  justify-content: start;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  width: 259px;
+}
+
+.product-image-wrapper {
+  width: 259px;
+  height: 301px;
+}
+
+.product-image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20.8px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.product-price {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20.8px;
+  color: #fff;
+}
+
+/* ✅ Media Query for Desktop (≥900px) */
+@media screen and (min-width: 900px) {
+  .product-section .top-section-wrapper {
+    flex-direction: row; /* change on desktop */
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .product-section .left-section-title {
+    flex: 1;
+    text-align: left;
+  }
+
+  .product-section .right-section-wrapper {
+    flex: 2;
+  }
+
+  .product-section .right-section-description {
+    text-align: left;
+  }
+
+  .product-grid .see-all-products{
+    display: flex;
+  }
+}

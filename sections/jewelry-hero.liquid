@@ -1,0 +1,114 @@
+{{ 'jewelry-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="hero-wrapper">
+  <div class="container">
+    <div class="hero-section">
+      <div class="top-hero-wrapper">
+        <div class="hero-title-wrapper">
+          <h1 class="title-line-1">Jewelry for Ritual</h1>
+          <h1 class="title-line-2">Power. You.</h1>
+        </div>
+        <div class="hero-top-img-wrapper">
+          <img src="{{ 'flower-image.png' | asset_url }}" alt="flower-img" width="" height="">
+        </div>
+      </div>
+      <div class="bottom-hero-wrapper">
+        <div class="hero-bottom-imgs-wrapper">
+          <div class="left-img-wrapper">
+            <img
+              class="bottom-left-img"
+              src="{{ 'bracelets-image.png' | asset_url }}"
+              alt="bracelets-img"
+              width=""
+              height=""
+            >
+          </div>
+          <div class="right-img-wrapper">
+            <img class="bottom-right-img" src="{{ 'rings-image.png' | asset_url }}" alt="rings-img" width="" height="">
+          </div>
+        </div>
+        <div class="hero-bottom-desc-btn-wrapper">
+          <div class="hero-desc-wrapper">
+            <p class="desc-line-1">More than adornment - these are your tools.</p>
+            <p class="desc-line-2">Wear your intentions. Charge them with light.</p>
+            <p class="desc-line-3">And let your magic rise with the moon.</p>
+          </div>
+          <div class="hero-btn-wrapper">
+            <button class="btn-class">Shop All Ritual Pieces</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Jewelry Hero Section",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Hero Section Settings"
+    },
+    {
+      "type": "text",
+      "id": "hero_title_line_1",
+      "label": "Hero Title Line 1",
+      "default": "Jewelry for Ritual"
+    },
+    {
+      "type": "text",
+      "id": "hero_title_line_2",
+      "label": "Hero Title Line 2",
+      "default": "Power. You."
+    },
+    {
+      "type": "image_picker",
+      "id": "top_hero_image",
+      "label": "Top Hero Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottom_left_image",
+      "label": "Bottom Left Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottom_right_image",
+      "label": "Bottom Right Image"
+    },
+    {
+      "type": "text",
+      "id": "desc_line_1",
+      "label": "Description Line 1",
+      "default": "More than adornment - these are your tools."
+    },
+    {
+      "type": "text",
+      "id": "desc_line_2",
+      "label": "Description Line 2",
+      "default": "Wear your intentions. Charge them with light."
+    },
+    {
+      "type": "text",
+      "id": "desc_line_3",
+      "label": "Description Line 3",
+      "default": "And let your magic rise with the moon."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Shop All Ritual Pieces"
+    }
+  ],
+    "presets": [
+        {
+        "name": "Jewelry Hero Section",
+        "category": "announcement-bar"
+        }
+    ]
+}
+{% endschema %}

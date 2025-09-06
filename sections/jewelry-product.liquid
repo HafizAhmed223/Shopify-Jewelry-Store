@@ -1,0 +1,82 @@
+{{ 'jewelry-product.css' | asset_url | stylesheet_tag }}
+<!-- Product Section -->
+<div class="product-wrapper">
+  <div class="container">
+    <div class="product-section">
+      <div class="top-section-wrapper">
+        <p class="left-section-title">To Stand Guard - Stones for Protection & Boundaries</p>
+        <div class="right-section-wrapper">
+          <p class="right-section-description">For witches who walk between worlds and need sacred shields.</p>
+          <ul class="right-section-products">
+            <li class="list-items-wrapper">
+              <div class="list-img-wrapper">
+                <img class="list-image" src="{{ 'BlackObsidian.svg' | asset_url }}" alt="product1" width="" height="">
+              </div>
+              <div class="list-text"><strong>BLACK Obsidian </strong>- Energetic shielding, shadow work</div>
+            </li>
+            <li class="list-items-wrapper">
+              <div class="list-img-wrapper">
+                <img class="list-image" src="{{ 'BlackOnyx.svg' | asset_url }}" alt="product1" width="" height="">
+              </div>
+              <div class="list-text"><strong>BLACK ONYX </strong>- Grounding, strength, releasing negativity</div>
+            </li>
+            <li class="list-items-wrapper">
+              <div class="list-img-wrapper">
+                <img class="list-image" src="{{ 'Moonstone.svg' | asset_url }}" alt="product1" width="" height="">
+              </div>
+              <div class="list-text"><strong>Raw Crystals </strong>- Untamed energy, elemental power</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="product-grid">
+        <div class="see-all-products">See All →</div>
+        <ul class="products-items-wrapper">
+          <li class="product-item">
+            <div class="product-image-wrapper">
+              <img class="product-image" src="{{ 'product1.svg' | asset_url }}" alt="product1" width="" height="">
+            </div>
+            <div class="product-title">Black Obsidian Celestial Unity Necklace</div>
+            <div class="product-price">$XXX.XX</div>
+          </li>
+          <li class="product-item">
+            <div class="product-image-wrapper">
+              <img class="product-image" src="{{ 'product2.svg' | asset_url }}" alt="product2" width="" height="">
+            </div>
+            <div class="product-title">Black Onyx Never Without My Gem Necklace - December...</div>
+            <div class="product-price">$XXX.XX</div>
+          </li>
+          <li class="product-item">
+            <div class="product-image-wrapper">
+              <img class="product-image" src="{{ 'product3.svg' | asset_url }}" alt="product3" width="" height="">
+            </div>
+            <div class="product-title">Raw Crystal Ring - Serene Moonstone</div>
+            <div class="product-price">$XXX.XX</div>
+          </li>
+          <li class="product-item">
+            <div class="product-image-wrapper">
+              <img class="product-image" src="{{ 'product4.svg' | asset_url }}" alt="product4" width="" height="">
+            </div>
+            <div class="product-title">Raw Crystal Necklace - Flowing</div>
+            <div class="product-price">$XXX.XX</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Jewelry Product Section",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+    "presets": [
+        {
+        "name": "Jewelry Product Section",
+        "category": "Jewelry-Product"
+        }
+    ]
+}
+{% endschema %}

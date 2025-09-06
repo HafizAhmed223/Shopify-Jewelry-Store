@@ -40,8 +40,8 @@
         "padding_bottom": 20
       }
     },
-    "jewelry-header": {
-      "type": "jewelry-header",
+    "jewelry-announcement-bar": {
+      "type": "jewelry-announcement-bar",
       "settings": {
         "show_top_bar": true,
         "top_bar_text": "Free shipping on orders over $100",
@@ -65,6 +65,6 @@
   "order": [
     "announcement-bar",
     "header",
-    "jewelry-header"
+    "jewelry-announcement-bar"
   ]
 }
